@@ -13,7 +13,7 @@ import stmall.domain.*;
 //<<< Clean Arch / Inbound Adaptor
 
 @RestController
-// @RequestMapping(value="/inventories")
+@RequestMapping(value="/inventories")
 @Transactional
 public class InventoryController {
 
