@@ -32,6 +32,11 @@ public class Order {
 
     private String address;
 
+    @PrePersist // 이렇게 하면면status를 넣지 않아도 기본으로 order placed가 뜬다.
+    public void onPrePersist(){
+        setStatus("ORDER PLACED");
+    }
+
     @PostPersist
     public void onPostPersist() {
         OrderPlaced orderPlaced = new OrderPlaced(this);

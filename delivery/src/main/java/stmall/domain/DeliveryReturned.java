@@ -14,7 +14,7 @@ public class DeliveryReturned extends AbstractEvent {
     private Long id;
     private Long orderid;
     private String customerid;
-    private String itermid;
+    private String itemid;
     private Integer qty;
     private String address;
 
